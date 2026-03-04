@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Voice</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1 class="main-title">SELECT VOICE</h1>
+
+<div class="container">
+
+    <form action="/setvoice" method="POST">
+        
+        <h3>Choose Voice Type</h3>
+
+        <div class="voice-options">
+
+            <label class="voice-card">
+                <input type="radio" name="voice" value="male" required>
+                <span>👨 Male</span>
+            </label>
+
+            <label class="voice-card">
+                <input type="radio" name="voice" value="female" required>
+                <span>👩 Female</span>
+            </label>
+
+        </div>
+
+        <button class="main-btn" type="submit">
+            Start
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

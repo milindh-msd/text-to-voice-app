@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text To Voice</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Title at Top -->
+    <h1 class="main-title">TEXT TO VOICE</h1>
+
+    <div class="container">
+
+        <h3>Enter a Sentence</h3>
+
+        <!-- Text Input -->
+        <input type="text" id="textInput" placeholder="Type something...">
+
+      <div class="file-upload">
+    <label for="fileInput" class="upload-btn">📁 Upload .txt File</label>
+    <input type="file" id="fileInput" accept=".txt">
+    <span id="fileName">No file chosen</span>
+</div>
+
+        <br>
+
+        <button class="main-btn" onclick="speakText()">Proceed</button>
+
+        <div class="emoji-face">
+            <div class="eyes"></div>
+            <div id="mouth" class="mouth"></div>
+        </div>
+
+        <!-- BACK BUTTON AT BOTTOM -->
+        <a href="/">
+            <button class="main-btn back-button">Back</button>
+        </a>
+
+    </div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
